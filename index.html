@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Lerning</title>
+</head>
+<style>
+    .bolderTitle{
+        font-weight: bolder;
+        font-size: 22px;
+    }
+    .boldButton{
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+    .margintop{
+        margin-top: 8%;
+    }
+    
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .linkHero{
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .TextHeroColor{
+        color: white;
+    }
+    .TextHeroColor:hover{
+        color: #021c42;
+    }
+    .TextH1Color{
+        color: white;
+    }
+    .bottunNav{
+        background-color: #0d6efd;
+        border-radius: 30px;
+        padding: 10px 20px;
+    }
+    .pos{
+        position: absolute;
+        z-index: 5;
+    }
+    .iconBoxs{
+        color: #0d6efd;
+        font-size:50px; 
+        background-color: white; 
+        padding: 6px; 
+        border-radius: 20px;
+    }
+    .courseName{
+        color: #2f2f30; 
+        font-weight: 400; 
+        font-size: 18px;
+    }
+    .courseNumb{
+        color: gray;
+        display: block;
+        font-weight: lighter;
+    }
+
+    .textUnderSec1{
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .textUnderSec1 a{
+        text-decoration: none;
+    }
+
+</style>
+
+<body>
+
+    <header>
+    <div class="overlay">
+            <div class="ah_navBart" >
+                <div class="container">
+                    <div class="navBartUP">
+                        <div class="navPart1 ">
+                            <div class="question TextHeroColor">
+                                <div class="qestMark"><i class="fa-solid fa-question qestBorder"></i></div>
+                                <h8 class="qestText">Have a questions?</h8>
+                            </div>
+                            <div class="teleNumber TextHeroColor">
+                                <div><i class="fa-solid fa-phone teleLogo" ></i></div>
+                                <h8 class="teleText" >10 20 123 456</h8>
+                            </div>
+                            <div class="emailNav TextHeroColor">
+                                <div><i class="fa-solid fa-envelope emailLogo "></i></div>
+                                <h8 class="emailNavText">info@mydommain.com</h8>
+                            </div>
+                        </div>
+                        <div class="navPart2">
+                            <div class="lockNav TextHeroColor">
+                                <div><i class=" fa-solid fa-lock"></i></div>
+                                <h8 class="LogNavText ">Log In</h8>
+                            </div>
+                            <div class="registerNav TextHeroColor">
+                                <div><i class="fa-solid  fa-user"></i></div>
+                                <h8 class="RegesterNavText ">Register</h8>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lineInMddel"></div>
+            <div class="navBartDOWN">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container">
+                        <a class="navbar-brand bolderTitle TextHeroColor" href="#">Lerner</a>
+                        <button class="navbar-toggler " style="color: white; border: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="" ><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link  TextHeroColor" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle TextHeroColor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link TextHeroColor" href="#">Our Staff</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link TextHeroColor" href="#">News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link TextHeroColor" href="#">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link TextHeroColor" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link TextHeroColor" href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <a class="navbar-brand bottunNav boldButton TextHeroColor" href="#">Enroll now</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        <!-- Hero START -->
+        <div class="ah_Hero">
+                <div class="continar margintop hight " style="overflow-x: hidden;">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div style=" text-align: center;  border: none;">
+                                <div class="card-body" style=" display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;">
+                                    <a href="#" class="linkHero TextHeroColor">Watch the video</a>
+                                    <h1 class="card-title TextH1Color ">Education is the Mother of <br> Leadership</h1>
+                                    <a href="#" style="text-transform:uppercase; font-size: 14px; padding: 10px 30px; border-radius: 30px; " class="btn btn-primary">Expolre courses</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Hero END -->
+    </header>
+    
+    <!---------------------------->
+    
+    <!-- Sectio1 : Browse START -->
+    <section id="BrowseCateg" style=" margin-top: 100px; margin-bottom: 100px;">
+        <h2 class="H2Font">Browse Top Category</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <!--boxs-->
+                    <div class="box1">
+                        <i class=" iconBoxs fa-solid fa-atom"></i>
+                        <div class="textsSec1">
+                            <label class="courseName" >Science</label>
+                            <label class="courseNumb" >1,391 courses</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <!--boxs-->
+                    <div class="box1">
+                        <i class=" iconBoxs fa-solid fa-atom"></i>
+                        <div class="textsSec1">
+                            <label class="courseName" >Science</label>
+                            <label class="courseNumb" >1,391 courses</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <!--boxs-->
+                    <div class="box1">
+                        <i class=" iconBoxs fa-solid fa-atom"></i>
+                        <div class="textsSec1">
+                            <label class="courseName" >Science</label>
+                            <label class="courseNumb" >1,391 courses</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <!--boxs-->
+                    <div class="box1">
+                        <i class=" iconBoxs fa-solid fa-atom"></i>
+                        <div class="textsSec1">
+                            <label class="courseName" >Science</label>
+                            <label class="courseNumb" >1,391 courses</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <!--boxs-->
+                    <div class="box1">
+                        <i class=" iconBoxs fa-solid fa-atom"></i>
+                        <div class="textsSec1">
+                            <label class="courseName" >Science</label>
+                            <label class="courseNumb" >1,391 courses</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <!--boxs-->
+                    <div class="box1">
+                        <i class=" iconBoxs fa-solid fa-atom"></i>
+                        <div class="textsSec1">
+                            <label class="courseName" >Science</label>
+                            <label class="courseNumb" >1,391 courses</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <!--boxs-->
+                    <div class="box1">
+                        <i class=" iconBoxs fa-solid fa-atom"></i>
+                        <div class="textsSec1">
+                            <label class="courseName" >Science</label>
+                            <label class="courseNumb" >1,391 courses</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <!--boxs-->
+                    <div class="box1">
+                        <i class=" iconBoxs fa-solid fa-atom"></i>
+                        <div class="textsSec1">
+                            <label class="courseName" >Science</label>
+                            <label class="courseNumb" >1,391 courses</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="textUnderSec1">We have more category here.<a href="#"> Browse all.</a> </p>
+    </section>
+    <!-- Sectio1 : Browse END -->
+
+    <!---------------------------->
+
+    <!-- Section2 : Become Instructor START -->
+    <section id="BecomeInst">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 col-sm-12 becomInstText">
+                    <h2 class="H2FontS">Become an Instructor</h2>
+                    <p class="BeInPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti recusandae, cupiditate placeat minima est ipsa illo maiores consectetur rem, illum sapiente voluptatibus dolorem, aliquid laborum asperiores. Possimus excepturi tempore deleniti?</p>
+                    <p class="BeInPara"><i class="fa-solid fa-check check"></i>Lorem ipsum dolor sit.</p>
+                    <p class="BeInPara"><i class="fa-solid fa-check check"></i>Lorem ipsum dolor sit.</p>
+                    <p class="BeInPara"><i class="fa-solid fa-check check"></i>Lorem ipsum dolor sit.</p>
+                    <a href="#" style="text-transform:uppercase;font-weight: 500; font-size: 12px; padding: 10px 30px; border-radius: 30px; " class="btn btn-primary">get started</a>    
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 imgInstror ">
+                    <img src="./assets/img/teacher.png" class="imgTeacher" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section2 : Become Instructor END -->
+
+    <!---------------------------->
+
+    <!-- Section3 : Have Best Education START -->
+        <section id="BestEducation">
+            <h2 class="H2Font">We Have Best Education</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="box2">
+                                <i class="fa-solid fa-music iconBES"></i>
+                                <p class="majourName">Music class</p>
+                                <p class="courseNumb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus excepturi voluptate hic nam sint.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="box2">
+                                <i class="fa-solid fa-calculator iconBES"></i>
+                                <p class="majourName">Math class</p>
+                                <p class="courseNumb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus excepturi voluptate hic nam sint.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="box2">
+                                <i class="fa-solid fa-book-open-reader iconBES"></i>
+                                <p class="majourName">English class</p>
+                                <p class="courseNumb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus excepturi voluptate hic nam sint.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="box2">
+                                <i class="fa-solid fa-book iconBES"></i>
+                                <p class="majourName">Reading for Kids</p>
+                                <p class="courseNumb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus excepturi voluptate hic nam sint.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="box2">
+                                <i class="fa-solid fa-clock-rotate-left iconBES"></i>
+                                <p class="majourName">History class</p>
+                                <p class="courseNumb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus excepturi voluptate hic nam sint.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="box2">
+                                <i class="fa-solid fa-headphones iconBES"></i>
+                                <p class="majourName">Music </p>
+                                <p class="courseNumb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus excepturi voluptate hic nam sint.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    <!-- Section3 : Have Best Education END   -->
+
+    <!---------------------------->
+
+    <!-- Section4 : Right Course For You START -->
+        <section id="RightCourseFYou">
+            <h2 class="H2Font"> Right Course For You</h2>
+            <p class="RCFYPara" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quam odit tempore fuga iste nobis. <br> Deserunt recusandae ut blanditiis doloremque.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="cartRCFY">
+                                <div class="imgRCFY">
+                                    <img src="./assets/img/child2.jpg" style="width: 100%;" alt="s">
+                                </div>
+                                <div class="RCFYPart1">
+                                    <p style="color: #2e6dc8;"><i class="fa-solid fa-book-open RCFYbook"></i> 43 lesson</p>
+                                    <p style="color: gold;"><i class="fa-solid fa-star RCFYstar"></i> 4.8</p>
+                                </div>
+                                <div class="RCYPPart2">
+                                    <p><strong>Education Programe Title</strong></p>
+                                    <p class="courseNumb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, inventore.</p>
+                                </div>
+                                <div class="RCFYlineincart"></div>
+                                <div class="RCFYPart3">
+                                    <p>$87.00</p>
+                                    <p style="color: #2e6dc8;">leen more</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="cartRCFY">
+                                <div class="imgRCFY">
+                                    <img src="./assets/img/child2.jpg" style="width: 100%;" alt="s">
+                                </div>
+                                <div class="RCFYPart1">
+                                    <p style="color: #2e6dc8;"><i class="fa-solid fa-book-open RCFYbook"></i> 43 lesson</p>
+                                    <p style="color: gold;"><i class="fa-solid fa-star RCFYstar"></i> 4.8</p>
+                                </div>
+                                <div class="RCYPPart2">
+                                    <p><strong>Education Programe Title</strong></p>
+                                    <p class="courseNumb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, inventore.</p>
+                                </div>
+                                <div class="RCFYlineincart"></div>
+                                <div class="RCFYPart3">
+                                    <p>$87.00</p>
+                                    <p style="color: #2e6dc8;">leen more</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="cartRCFY">
+                                <div class="imgRCFY">
+                                    <img src="./assets/img/child2.jpg" style="width: 100%;" alt="s">
+                                </div>
+                                <div class="RCFYPart1">
+                                    <p style="color: #2e6dc8;"><i class="fa-solid fa-book-open RCFYbook"></i> 43 lesson</p>
+                                    <p style="color: gold;"><i class="fa-solid fa-star RCFYstar"></i> 4.8</p>
+                                </div>
+                                <div class="RCYPPart2">
+                                    <p><strong>Education Programe Title</strong></p>
+                                    <p class="courseNumb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, inventore.</p>
+                                </div>
+                                <div class="RCFYlineincart"></div>
+                                <div class="RCFYPart3">
+                                    <p>$87.00</p>
+                                    <p style="color: #2e6dc8;">leen more</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    <!-- Section4 : Right Course For You END -->
+    
+    <!---------------------------->
+
+    <!-- Section5 : Tomorrow leaders START -->
+        <section id="TomorrowLeades">
+            <div class="overlay1"> 
+                <div class="TLcontinar" style=" margin: auto; text-align: center; ">
+                    <div class="card-body" style=" display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;">
+                        <h2 class="card-title TextH1Color ">Education is the Mother of Leadership</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis odio qui cumque repudiandae ut. Necessitatibus!</p>
+                        <a href="#" style="text-transform:uppercase; font-size: 14px; padding: 10px 30px; border-radius: 30px; " class="btn btn-primary">Expolre courses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Section5 : Tomorrow leaders END   -->
+
+    <!---------------------------->
+    <!-- Section6 : About US  START -->
+        <section id="AboutUS">
+            <div class="container">
+                <div class="AboutContainer">
+                    <div class="Aboutpart1">
+                        <div class="aboutPara">
+                            <h2 class="H2FontS">About Us</h2>
+                            <p class="AboutPara1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti recusandae, cupiditate placeat minima est ipsa illo maiores consectetur rem, illum sapiente voluptatibus dolorem, aliquid laborum asperiores. Possimus excepturi tempore deleniti?</p>
+                            <p class="AboutPara1"><i class="fa-solid fa-check check"></i>Lorem ipsum dolor sit.</p>
+                            <p class="AboutPara1"><i class="fa-solid fa-check check"></i>Lorem ipsum dolor sit.</p>
+                            <p class="AboutPara1"><i class="fa-solid fa-check check"></i>Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div class="AboutThreeEle">
+                            <div class="Ele1">
+                                <p class="aboutNumb">204+</p>
+                                <p>No. Student</p>
+                            </div>
+                            <div class="Ele1">
+                                <p class="aboutNumb">0</p>
+                                <p>No. Teachers</p>
+                            </div>
+                            <div class="Ele1">
+                                <p class="aboutNumb">0</p>
+                                <p>No. Awards</p>
+                            </div>
+                        </div>
+                        <div class="AboutButton">
+                            <a href="#" style="text-transform:uppercase;font-weight: 500; font-size: 12px; padding: 10px 30px; border-radius: 30px; " class="btn btn-primary">Admisson</a>    
+                            <a href="#" class="btn1 ">learn more</a>    
+                        </div>
+                    </div>
+                    <div class="Aboutpart2">
+                        <iframe class="AboutVideo" src="https://www.youtube.com/embed/AoUDBThB4nw?si=U_RQIJp2TiFS__9B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Section6 : About US END    -->
+
+    <!---------------------------->
+    <!-- Section7 : School News START -->
+        <section id="SchoolNews">
+            <h2 class="H2Font">School News</h2>
+            <p class="RCFYPara" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quam odit tempore fuga iste nobis. <br> Deserunt recusandae ut blanditiis doloremque.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="SchoolNewsBox">
+                            <div class="SNPic">
+                                <img src="./assets/img/twoChild1.jpg" alt="">
+                            </div>
+                            <div class="BoxContiner">
+                                <div class="H4Font">
+                                    <h4>Education for Tomorrow Leaders</h4>
+                                </div>
+                                <div class="SNIcon">
+                                    <p class="SNIP1"><i class="fa-solid fa-calendar-days"></i> june 22, 2023</p>
+                                    <p class="SNIP2"><i class="fa-solid fa-user"></i> admin</p>
+                                </div>
+                                <div class="SNText">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim blanditiis iste temporibus rerum. Quibusdam, reiciendis.</p>
+                                </div>
+                                <div class="SNfooter">
+                                    <a href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="SchoolNewsBox">
+                            <div class="SNPic">
+                                <img src="./assets/img/twoChild1.jpg" alt="">
+                            </div>
+                            <div class="BoxContiner">
+                                <div class="H4Font">
+                                    <h4>Education for Tomorrow Leaders</h4>
+                                </div>
+                                <div class="SNIcon">
+                                    <p class="SNIP1"><i class="fa-solid fa-calendar-days"></i> june 22, 2023</p>
+                                    <p class="SNIP2"><i class="fa-solid fa-user"></i> admin</p>
+                                </div>
+                                <div class="SNText">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim blanditiis iste temporibus rerum. Quibusdam, reiciendis.</p>
+                                </div>
+                                <div class="SNfooter">
+                                    <a href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Section7 : School News END   -->
+
+    <!---------------------------->
+    <!-- Section8 : Pricing  -->
+        <section id="Pricing">
+            <h2 class="H2Font">Pricing</h2>
+            <p class="RCFYPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quam odit tempore fuga iste nobis.
+                <br>Deserunt recusandae ut blanditiis doloremque.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="box3">
+                            <h4 class="H4Font">Starter</h4>
+                            <p class="pric">$50.99 <span class="month">/month</span> </p>
+                            <p class="PrText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus excepturi voluptate hic nam sint.</p>
+                            <a href="#" class="btn btn-primary" style="border-radius: 30px; text-transform:uppercase ;">get started</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="box3">
+                            <h4 class="H4Font">Starter</h4>
+                            <p class="pric">$50.99 <span class="month">/month</span> </p>
+                            <p class="PrText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus excepturi voluptate hic nam sint.</p>
+                            <a href="#" class="btn1 btn-primary" style="border-radius: 30px; text-transform:uppercase ;">get started</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="box3">
+                            <h4 class="H4Font">Starter</h4>
+                            <p class="pric">$50.99 <span class="month">/month</span> </p>
+                            <p class="PrText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus excepturi voluptate hic nam sint.</p>
+                            <a href="#" class="btn btn-primary" style="border-radius: 30px; text-transform:uppercase ;">get started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Section8 : School News START -->
+    <!---------------------------->
+    <!-- style="width:100%; height: 100vh;" -->
+    <!-- Section9 : carousel START -->
+    <section id="carousel">
+        <div class="CarouselContiner py-5">
+            <h2 class="fw-bolder text-center mt-5 colorCarouelH2">Testimonials</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="items ">
+                            <p class="colorCarouelpara text-center mx-auto mt-5 w-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Undedolores, eveniet obcaecati beatae facilis repellat consequuntur dolorum reprehenderit laborum saepe quos? Optio totamaiores,cumque asperiores atque necessitatibus?</p>
+                            <div class=" image-cour mt-4 rounded-circle mx-auto">
+                            </div>
+                            <h5 class="colorCarouelH2 text-center mt-4 mb-0">John Doe</h5>
+                            <p class="colorCarouelpara text-center ">CEO, Founder</p>
+    
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="items ">
+                            <p class="colorCarouelpara text-center mx-auto mt-5 w-50">Lorem ipsum dolor sit, amet consectetur adipisicing lit. Unde dolores, eveniet obcaecati beatae facilis repellat consequuntur dolorum reprehenderit laborum saepe quos? Optio totam maiores, cumque asperiores atque necessitatibus?</p>
+                            <div class="image-cour mt-4 rounded-circle mx-auto">
+                            </div>
+                            <h5 class="colorCarouelH2 mt-4 text-center mb-0">John Doe</h5>
+                            <p class="colorCarouelpara text-center ">CEO, Founder</p>
+    
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="items ">
+                            <p class="colorCarouelpara text-center mx-auto mt-5 w-50">Lorem ipsum dolor sit, amet consectetur adipisicingelit. Undequo dolores, eveniet ob beatae facilis repellat consequuntur dolorum reprehenderit laborum saepe quos? Optio totam  cumque asperiores atque necessitatibus?</p>
+                            <div class="image-cour mt-4 rounded-circle mx-auto">
+                            </div>
+                            <h5 class="colorCarouelH2 text-center mb-0 mt-4">John Doe</h5>
+                            <p class=" colorCarouelpara text-center ">CEO, Founder</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators position-relative   ">
+                    <button type="button" id="widthBotto" data-bs-target="#carouselExampleIndicators " data-bs-slide-to="0" class="active "
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" id="widthBotto" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" id="widthBotto" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+            </div>
+            
+            </div>
+        </div>
+    </section>
+    <!--  Section9 :  carousel END    -->
+    <!---------------------------------->
+
+    <!-- Section10 : Why chose start  -->
+        <section id="WhyChose">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <img class="WhyChoseIMG" src="./assets/img/child2.jpg" alt="">
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-sm-12">
+                        <h2 class="WChoseH2">Why Chose Us</h2>
+                        <p  class="WchosePara">Lorem ipsum dolor sit amet consectetur adipisicing elitadipisicing elit adipisicing elit. Delectus, omnis! Similique, ab voluptate.</p>
+                        <p  class="WchosePaPox"> - Good Teachers and Staffs</p>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-3">
+                                <img class="WhyChoseIMG" src="./assets/img/child2.jpg" alt="">
+                            </div>
+                            <div class="col-lg-8 col-md-6 col-sm-9">
+                                <p class="WchosePara1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facilis, in sit officiis doloremque amet tempora accusamus hic! Alias, totam ipsa atque aliquid libero!</p>
+                                <p class="WchosePara1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repudiandae!</p>
+                            </div>
+                        </div>
+                        <div class="wChosediv">
+                            <p class="WchosePara2"><span class="plus">+ </span>We Value Good Characters</p>
+                            <p class="WchosePara2"><span class="plus">+ </span> Your Children are Safe </p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--  Section10 : Why chose END   -->
+
+    <!---------------------------------->
+    <!-- Section10 : Why chose start  -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h6 class="H6Font">About Us</h6>
+                    <p class="FooterPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate dignissimos mollitia tenetur ea at quas sapiente incidunt tempora maiores, asperiores consequuntur nemo itaque modi debitis obcaecati perferendis. Quam, asperiores illo!</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h6 class="H6Font">Projects</h6>
+                        <p class="FooterPara11">Wep Design</p>
+                        <p class="FooterPara1">HTML 5</p>
+                        <p class="FooterPara1">CSS</p>
+                        <p class="FooterPara1">Java Script</p>
+                        <p class="FooterPara1">bootstrap</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h6 style="margin-bottom: 20px;" class="H6Font">Gallery</h6>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <img class="FooterIMG" src="./assets/img/child2.jpg" alt="">
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <img class="FooterIMG" src="./assets/img/child2.jpg" alt="">
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <img class="FooterIMG" src="./assets/img/child2.jpg" alt="">
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <img class="FooterIMG" src="./assets/img/child2.jpg" alt="">
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <img class="FooterIMG" src="./assets/img/child2.jpg" alt="">
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <img class="FooterIMG" src="./assets/img/child2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h6 class="H6Font">Contact</h6>
+                    <p class="FooterPara11">43 Raymouth Rd. Baltemoer , Londen 3910</p>
+                    <p class="FooterNumber">+1(123)-456-7890</p>
+                    <p class="FooterNumber">+1(123)-456-7890</p>
+                    <p class="FooterNumber">info@Gmail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h6 class="H6Font">About Us</h6>
+                    <a class="FooterLink" href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a class="FooterLink" href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a class="FooterLink" href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a class="FooterLink" href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="FooterLink" href=""><i class="fa-brands fa-dribbble"></i></a>
+                    <a class="FooterLink" href=""><i class="fa-solid fa-id-card"></i></a>
+                </div>
+            </div>
+            <p class="Copy">Copy Right  &copy;  2023. All Right Reserved. Design With &#128153; By ENG.Ahmad Ebrahem Alali.</p>
+        </div>
+    </section>
+    <!--  Section10 : Why chose END   -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
